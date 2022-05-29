@@ -1,11 +1,12 @@
 {
   "name": "tinxit/module-tag-manager",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Will insert a head and body script in all pages",
   "type": "magento2-module",
   "require": {
     "magento/framework": "*",
-    "magento/module-theme": "101.1.*"
+    "magento/module-theme": "101.1.*",
+      "tinxit/module-core": "1.0.*"
   },
   "license": [
     "Proprietary"
