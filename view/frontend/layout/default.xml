@@ -1,0 +1,23 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <!-- Google Tag Manager tempelates -->
+        <referenceContainer name="head.additional">
+            <block ifconfig="tinxtagmanager/setup/enable_gtm"
+                   class="Magento\Framework\View\Element\Template"
+                   name="gtm.head"
+                   before="-"
+                   template="TinxIT_TagManager::html/gtm_head.phtml"
+            />
+        </referenceContainer>
+
+        <referenceContainer name="after.body.start">
+            <block ifconfig="tinxtagmanager/setup/enable_gtm"
+                   class="Magento\Framework\View\Element\Template"
+                   name="gtm.body"
+                   before="-"
+                   template="TinxIT_TagManager::html/gtm_body.phtml"
+            />
+        </referenceContainer>
+
+    </body>
+</page>
